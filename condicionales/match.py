@@ -6,7 +6,7 @@
 # Es parecido a escribir muchos if / elif / else, pero más ordenado
 # y fácil de leer cuando hay muchas opciones.
 # Está disponible desde Python 3.10 en adelante.
-# ============================================================
+# ============================================================ds
 
 # Creamos una variable llamada "dia" y le guardamos el número 4.
 # Cambia este número (1, 2, 3, 4...) para ver cómo cambia el resultado.
