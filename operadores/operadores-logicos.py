@@ -1,5 +1,5 @@
 # Operadores de Comparación
-
+# Todos estos operadores devuelven un Boolean
 x = 5
 y = 3
 z = 5
