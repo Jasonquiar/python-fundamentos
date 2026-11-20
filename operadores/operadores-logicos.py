@@ -1,24 +1,68 @@
-# Operadores de Comparación
-# Todos estos operadores devuelven un Boolean
+# ============================================================
+# OPERADORES DE COMPARACIÓN
+# ============================================================
+# Sirven para COMPARAR dos valores.
+# El resultado SIEMPRE es un Boolean (booleano)
+#   True  -> Verdadero (la comparación se cumple)
+#   False -> Falso     (la comparación NO se cumple)
+
 x = 5
 y = 3
 z = 5
 
-print(x == y) # ¿Si es igual? False
-print(x != y) # Si es distinto True
-print(x > z) # Es mayor a segunda True
-print(x < y) # Es menor False
-print(x >= z) # Es mayor o igual True
-print(x <= y) # Es menor o igual False
+# ==  (igual a): pregunta si los dos valores son IGUALES.
+# OJO: se usan DOS signos "==". Un solo "=" sirve para asignar
 
-# Operadores lógicos
+print(x == y)  # ¿5 es igual a 3?          -> False
 
-#      True      False
-print(x > y and y > z) # False
-print(x > y or y > z) # True
+# !=  (distinto de): pregunta si los valores son DIFERENTES.
+print(x != y)  # ¿5 es distinto de 3?      -> True
 
-v = True
-f = False
+print(x > z)   # ¿5 es mayor que 5?-> False (son iguales, no mayor)
+print(x < y)   # ¿5 es menor que 3?        -> False
+print(x >= z)  # ¿5 es mayor o igual a 5?  -> True (porque son iguales)
+print(x <= y)  # ¿5 es menor o igual a 3?  -> False
 
-print(not(v))
-print(not(f))
+
+# ============================================================
+# OPERADORES LÓGICOS
+# ============================================================
+# Sirven para COMBINAR varias comparaciones (o valores booleanos)
+# en una sola. También devuelven True o False.
+
+# and  (y): devuelve True SOLO si AMBAS condiciones son True.
+#           Si al menos una es False, el resultado es False.
+#
+#   True  and True  -> True
+#   True  and False -> False
+#   False and True  -> False
+#   False and False -> False
+
+#      x > y -> True     y > z -> False
+print(x > y and y > z)  # True and False -> False
+
+# or  (o): devuelve True si AL MENOS UNA de las condiciones es True.
+#          Solo da False cuando AMBAS son False.
+#
+#   True  or True  -> True
+#   True  or False -> True
+#   False or True  -> True
+#   False or False -> False
+#
+#      x > y -> True    y > z -> False
+print(x > y or y > z)   # True or False -> True
+
+# not  (no): INVIERTE el valor booleano.
+#            Lo que es True se vuelve False, y lo que es False se vuelve True.
+print(not v)  # not True  -> False
+print(not f)  # not False -> True
+# Nota: los paréntesis en not(v) también funcionan, pero no son necesarios,
+# porque "not" es un operador, no una función.
+
+
+# Guardamos valores booleanos directamente en variables.
+# Nota: True y False se escriben con la primera letra en MAYÚSCULA.
+
+v = True   # v de "verdadero"
+f = False  # f de "falso"
+
