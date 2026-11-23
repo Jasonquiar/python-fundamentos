@@ -1,83 +1,91 @@
-# Python Fundamentos - Curso de Platzi
+# 🐍 Python Fundamentos: mis apuntes del curso de Platzi
 
-Este repositorio corresponde al curso de **Fundamentos de Python** de **PLATZI** dictado por **Sergie Code**.
+> **Nota:** este repositorio es una **copia (fork)** del repositorio oficial del curso
+> [**Fundamentos de Python** de Platzi](https://github.com/platzi/python-fundamentos), dictado por **Sergie Code**.
+> El código base es del curso. Lo que **yo agregué** son **comentarios y notas explicativas** dentro de cada archivo,
+> para entender mejor cada concepto mientras avanzaba en las clases.
 
-## 📚 Temas del Curso
+El objetivo de este repo es servir como **cuaderno de estudio**: cada archivo `.py` es un ejemplo
+pequeño y está comentado línea por línea en español, pensado para alguien que empieza desde cero.
 
-El curso abarca los siguientes temas fundamentales de Python:
+---
 
-- ✅ **Introducción a Python**
-- ✅ **Instalaciones necesarias para el curso**
-- ✅ **Variables de Entorno**
-- ✅ **Consola**
-- ✅ **Sintaxis e indentación**
-- ✅ **Comentarios**
-- ✅ **Variables**
-- ✅ **Tipo de datos**
-- ✅ **Números**
-- ✅ **Texto (Strings)**
-- ✅ **Booleanos**
-- ✅ **None**
-- ✅ **Operadores**
-- ✅ **Condicionales**
-- ✅ **Condicional match**
-- ✅ **Bucle while**
-- ✅ **Bucle for**
-- ✅ **Listas**
-- ✅ **Tuplas**
-- ✅ **Conjuntos**
-- ✅ **Diccionarios**
-- ✅ **Funciones**
-- ✅ **Funciones Lambda**
-- ✅ **Módulos**
-- ✅ **Uso de múltiples archivos**
-- ✅ **Manejo de errores**
-- ✅ **Manejo de archivos**
-- ✅ **Sentencia with**
+## 📌 ¿Qué encontrarás aquí?
 
-## 🎯 Sobre Platzi
+- ✅ El código de cada clase del curso, organizado por tema en carpetas.
+- 📝 **Comentarios propios** que explican el *qué* y el *por qué* de cada línea: qué hace, qué imprime y errores comunes.
+- ☕ Un **proyecto final** (máquina de café) que junta todo lo aprendido.
 
-**Platzi** es una plataforma de educación en línea enfocada en el desarrollo profesional, especialmente en áreas como tecnología, negocios, marketing y diseño. Ofrece cursos, rutas de aprendizaje y programas en vivo dictados por expertos de la industria, con un modelo de suscripción que permite acceso ilimitado a su catálogo. Su comunidad activa y su enfoque en el aprendizaje constante la convierten en una de las principales opciones de formación digital en Latinoamérica y el mercado hispanohablante.
+---
 
-## 👨‍💻 Sobre el Instructor: Sergie Code
+## 🗂️ Estructura del repositorio
 
-**Sergie Code** es un Software Engineer especializado en Frontend y actualmente se desempeña como Tech Lead liderando dos equipos de desarrolladores en una reconocida empresa americana de seguros. Además, es creador de contenido tecnológico y educativo, ofreciendo cursos gratuitos de programación en su canal de YouTube y compartiendo a diario en Instagram, TikTok y otras redes sociales tips, recomendaciones y novedades del mundo del desarrollo y la inteligencia artificial.
+Los temas están en el orden en que se ven en el curso:
 
-### 🎓 Experiencia Educativa
+| # | Tema | Carpeta / archivo |
+|---|------|-------------------|
+| 1 | Instalaciones necesarias | [instalaciones-necesarias.md](instalaciones-necesarias.md) |
+| 2 | Consola (`print`, `input`) | [consola/](consola/) |
+| 3 | Sintaxis e indentación | [sintaxis-indentacion/](sintaxis-indentacion/) |
+| 4 | Comentarios | [comentarios/](comentarios/) |
+| 5 | Variables y asignación múltiple | [variables/](variables/), [asignacion-multiple/](asignacion-multiple/) |
+| 6 | Tipos de datos: números, texto, booleanos, `None` | [tipo-de-datos/](tipo-de-datos/) |
+| 7 | Operadores aritméticos, de asignación y lógicos | [operadores/](operadores/) |
+| 8 | Condicionales `if / elif / else` y `match` | [condicionales/](condicionales/) |
+| 9 | Bucles `while` y `for` | [bucles/](bucles/) |
+| 10 | Listas, tuplas, conjuntos y diccionarios | [tipo-de-datos/](tipo-de-datos/) |
+| 11 | Funciones y funciones lambda | [funciones/](funciones/) |
+| 12 | Módulos y uso de varios archivos | [modulos/](modulos/) |
+| 13 | Manejo de errores (`try / except / finally`) | [manejo-errores/](manejo-errores/) |
+| 14 | Manejo de archivos y sentencia `with` | [manejo-archivos/](manejo-archivos/) |
+| 15 | **Proyecto final: máquina de café** | [trabajo-final-maquina-cafe/](trabajo-final-maquina-cafe/) |
 
-- Ha dictado clases en la **UTN**
-- Instructor en los programas **Codo a Codo** y **Argentina Programa 4.0**
-- Desarrolló e impartió cursos de HTML, CSS, JavaScript y ReactJs en la carrera **Certified Tech Developer** de **Digital House**
+---
 
-### 📹 Colaboración con Platzi
+## ☕ Proyecto final: máquina de café
 
-En el marco de su colaboración con Platzi, recientemente filmó en Bogotá, Colombia, tres cursos para la nueva etapa de contenidos 2025/2026:
+Es un programa de consola que simula una máquina de café:
 
-1. **Fundamentos de Python** ⭐ (Este curso)
-2. **Firebase con Angular y Gemini**
-3. **Monorepo NX con Angular y NodeJS**
+1. Muestra un menú (`menu.py`).
+2. Permite **pedir un café** (Espresso, Cappuccino, Latte o Americano) y lo guarda en `pedidos.txt` (`pedidos.py`).
+3. Permite **ver el historial** de pedidos leyendo ese archivo (`historial.py`).
+4. `main.py` une todo con un bucle `while True` hasta que el usuario elige salir.
 
-### 🐍 Cursos de Python
+Usa casi todo lo visto en el curso: funciones, módulos, diccionarios, condicionales, bucles,
+manejo de archivos con `with` y manejo de errores con `try / except`.
 
-### 🎓 Formación Académica
+---
 
-- Estudios en **Ingeniería Electrónica** en la UNC
-- Certificación como **Java Developer Engineer** en Educación IT
-- Extensa capacitación en frameworks y tecnologías a través de cursos online
+## ▶️ Cómo ejecutar los ejemplos
 
-### 🎵 Perfil Adicional
+Necesitas **Python 3.10 o superior** (la sentencia `match` lo requiere).
 
-Además de su perfil técnico, se ha desarrollado como **músico independiente**, lo que potenció su creatividad y habilidades comunicacionales. Gracias a su experiencia, posee destacadas soft skills, comodidad al hablar en público y ha participado como orador en eventos multitudinarios como **ADA13**, **Fingurú** y **SAIA** en la UTN.
+```bash
+# Clonar el repo
+git clone https://github.com/jasonquiar/python-fundamentos.git
+cd python-fundamentos
 
-## 🌐 Redes Sociales de Sergie Code
+# Ejecutar cualquier ejemplo
+python tipo-de-datos/listas.py
 
-¡Síguelo en todas sus plataformas para más contenido educativo!
+# Ejecutar el proyecto final
+python trabajo-final-maquina-cafe/main.py
+```
 
-- 📸 **Instagram**: https://www.instagram.com/sergiecode
-- 🧑🏼‍💻 **LinkedIn**: https://www.linkedin.com/in/sergiecode/
-- 📽️ **YouTube**: https://www.youtube.com/@SergieCode
-- 😺 **GitHub**: https://github.com/sergiecode
-- 👤 **Facebook**: https://www.facebook.com/sergiecodeok
-- 🎞️ **TikTok**: https://www.tiktok.com/@sergiecode
-- 🕊️ **Twitter**: https://twitter.com/sergiecode
-- 🧵 **Threads**: https://www.threads.net/@sergiecode
+> 💡 Recomendación: abre el archivo, lee los comentarios **antes** de ejecutarlo e intenta adivinar
+> qué va a imprimir. Luego ejecútalo y compara.
+
+---
+
+## 🙌 Créditos
+
+- **Curso original:** [Fundamentos de Python, Platzi](https://platzi.com)
+- **Repositorio original:** [github.com/platzi/python-fundamentos](https://github.com/platzi/python-fundamentos)
+- **Instructor:** **Sergie Code**, Software Engineer y Tech Lead, creador de contenido educativo.
+  - 📽️ YouTube: https://www.youtube.com/@SergieCode
+  - 😺 GitHub: https://github.com/sergiecode
+  - 🧑🏼‍💻 LinkedIn: https://www.linkedin.com/in/sergiecode/
+  - 📸 Instagram: https://www.instagram.com/sergiecode
+
+Todo el mérito del contenido del curso es de Platzi y de Sergie Code. Este repositorio solo agrega
+apuntes personales con fines de estudio.
